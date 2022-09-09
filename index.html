@@ -1,12 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+
+  <title>
+    George Buțco
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <h1>Is working</h1>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>George Buțco</span>
+        </h1>
+        <p>Student based in Iași, Romania.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <div class="work__box" id="numy">
+            <div class="work__text">
+              <h3>Numy v1</h3>
+              <p>
+                Numy is my final high school project, a puzzle game inspired by
+                <a href="https://play.google.com/store/apps/details?id=com.kila.zahlenspielpro.lars">Numberama</a>.
+                I wrote the first version of this project under the supervision of Grigoraş Marcel and Lombadă Ecaterina, and it went through numerous
+                <a href="https://imgur.com/a/8Xdh5fK">redesigns</a>
+                and refactoring. Being the definition of a perfectionist, I will rewrite the code until I'm somewhat satisfied with the result.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SASS</li>
+                <li>TypeScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="http://george-butco.me/Numy/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/George-debug/Numy" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-numy.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Military-Time</h3>
+              <p>
+                An App I made to practice physics animations on ReactJS.
+                The input is in a 12-hour format, and the output is in a 24-hour format. The input time changes the color scheme (Day / Night)
+              </br></br>
+                I used <a href="https://www.npmjs.com/package/react-spring">react-spring</a> and the design depends on the height of the window.
+              </p>
+              <ul class="work__list">
+                <li>SASS</li>
+                <li>React</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="http://george-butco.me/Military-Time/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/George-debug/Military-Time">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-military-time.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Numy v2</h3>
+              <p>
+                I wrote this new version of <a href="#numy">Numy</a> with React and Redux. The design is a dynamic SVG, changing according to the screen resolution.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Redux</li>
+                <li>SASS</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="http://george-butco.me/numy-react/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/George-debug/numy-react">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-numy-react.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            
+            <p>
+              A hard-working student offers a creative approach due to an open mind and eagerness to perfect and optimize.
+              A natural curiosity drives me to hunt for challenges and tackle problems of various difficulties.
+
+            </p>
+            
+            <a href="#" class="btn">My Resume</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <div class="row" style="position: relative;">
+    <div class="about__photo-container">
+      <img class="about__photo" src="./images/line.svg" alt="" />
+    </div>
+  </div>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quia aperiam, molestiae repellat natus velit autem voluptatem eligendi et, perspiciatis facilis deleniti obcaecati rerum vitae minus repellendus dolorum in illo.
+        </p>
+        
+        <a href="mailto:george.butco@gmail.com" class="btn">george.butco@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
