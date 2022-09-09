@@ -425,6 +425,18 @@ body:not(.user-is-tabbing) a:focus {
   font-size: var(--font-size-medium);
 }
 
+@media (max-width: 900px) {
+  .header__text {
+    width: 100vw;
+    left: 0;
+    text-align: center;
+  }
+
+  .header__text p {
+    max-width: none;
+  }
+}
+
 @media (max-width: 500px) {
   .header {
     text-align: center;
